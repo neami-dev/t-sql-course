@@ -16,3 +16,4 @@ FROM
     FROM Employees2) AS PerformanceTable
 GROUP BY PerformanceCategory;
 
+§
