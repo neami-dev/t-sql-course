@@ -1,0 +1,15 @@
+Introduction:
+
+Table-Valued Functions (TVFs) are user-defined functions in T-SQL that return tabular data as a result. They are a powerful feature in SQL Server that can be used to encapsulate complex queries and logic into reusable components. In this lesson, we will explore the concept of TVFs, their types, and how to create and use them in T-SQL.
+
+
+
+Types of Table-Valued Functions:
+
+There are two types of TVFs in T-SQL:
+
+1- Inline Table-Valued Functions (ITVFs): These functions return a table variable inline and can be used in the FROM clause of a SELECT statement.
+
+2- Multi-Statement Table-Valued Functions (MTVFs): These functions return a table variable using a series of SQL statements and can have multiple SELECT statements within them.
+
+These functions can also accept parameters and return a table variable based on the input.
