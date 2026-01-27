@@ -1,0 +1,23 @@
+Understanding Instead Of Triggers in T-SQL
+
+Introduction
+In this lesson, we will explore "Instead Of Triggers" in T-SQL, a feature of SQL Server. You will learn what they are, how they work, and where they are most effectively used. This lesson is crucial for those looking to add advanced data manipulation and control logic to their SQL Server database interactions.
+
+What are Instead Of Triggers?
+Instead Of Triggers are a type of database trigger in T-SQL that override the default action of INSERT, UPDATE, or DELETE statements on a table or view. These triggers are essential when you need to perform custom operations or validations that are not achievable with standard SQL constraints or rules.
+
+Key Characteristics:
+    Override Default Actions: They replace the standard data modification operation with custom logic defined in the trigger.
+    Versatile Use Cases: Ideal for complex validations, data transformations, and enforcing business rules.
+    Special Tables - inserted and deleted: These triggers can access the inserted and deleted tables for context about the data changes.
+
+How They Work:
+    When a data modification statement is executed on a table with an Instead Of Trigger, the trigger's code runs instead of the standard operation.
+    The trigger can include any T-SQL code, allowing for extensive customization and control over the data.
+    Unlike AFTER triggers, Instead Of Triggers can prevent the standard operation from occurring by not including it in their logic.
+
+Typical Use Cases:
+    Complex Operations on Views: Implementing updateable views based on multiple tables.
+    Data Validation: Enforcing complex validation rules before data changes are committed.
+    Data Transformation: Modifying data before it is inserted or updated to meet specific criteria.
+    Soft Deletes: Marking records as inactive instead of physically deleting them.
